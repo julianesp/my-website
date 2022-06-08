@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+@font-face {
+    font-family: "icomoon";
+    src: url("../fonts/icomoon.eot?3ot2jt");
+    src: url("../fonts/icomoon.eot?3ot2jt#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?3ot2jt") format("truetype"), url("../fonts/icomoon.woff?3ot2jt") format("woff"), url("../fonts/icomoon.svg?3ot2jt#icomoon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    font-family: "icomoon" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+    content: "\e9bd";
+}
+
+.icon-menu {
+    position: fixed;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-size: cover;
+    background-color: #fff;
+    font-family: "Oswald", sans-serif;
+}
+
+.burger-button {
+    position: fixed;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    right: 0;
+    z-index: 20;
+}
+
+h2 {
+    font-size: 1.1rem;
+    font-weight: bolder;
+    color: #419cca;
+    border: 1px solid #419cca;
+    width: 200px;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 1s;
+}
+
+h2:hover {
+    background: linear-gradient(-180deg, #6fc0f9 10%, #0a96f7 100%);
+    color: #fff;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    right: -1025px;
+    padding: 10px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+    transition: 0.5s;
+}
+
+.header.is-active {
+    right: 0;
+}
+
+.header .logo {
+    text-align: left;
+}
+
+.header .logo img {
+    width: 150px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    animation-name: alfondo;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite, infinite;
+    animation-direction: alternate;
+}
+
+@keyframes alfondo {
+    0% {
+        transform: scale(0.7);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.header #menu-h {
+    text-align: center;
+}
+
+.header #menu-h .desplegar {
+    color: #fff;
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid white;
+    font-size: 1.1rem;
+    font-family: "Oswald", sans-serif;
+}
+
+.header #menu-h .desplegar:hover {
+    color: white;
+    background-color: #088dd1;
+    cursor: pointer;
+}
+
+.header #menu-h .sub-menu {
+    display: none;
+    margin-top: 15px;
+}
+
+.header #menu-h .sub-menu a {
+    color: #fff;
+    background-color: #78b7d8;
+    text-decoration: none;
+    font-size: 0.9rem;
+    flex-direction: column-reverse;
+}
+
+.header #menu-h:hover .sub-menu {
+    padding: 0 0;
+    display: block;
+}
+
+.header #menu-h img {
+    align-items: center;
+    width: 35px;
+}
+
+.header #menu-h a {
+    display: block;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.header #menu-h a:hover {
+    color: white;
+    background-color: #088dd1;
+    margin-left: 0;
+}
+
+.header #menu-h ul {
+    list-style-type: none;
+}
+
+.header #menu-h ul ul {
+    display: none;
+    position: absolute;
+    transition: 1s;
+}
+
+.header #menu-h ul li a {
+    width: 150px;
+    font-size: 1.4rem;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s all ease-in-out;
+}
+
+.header #menu-h ul li a:hover {
+    background-color: #088dd1;
+    transition: 0.5s all ease-in-out;
+}
+
+.header #menu-h ul li ul {
+    margin: 0 0;
+}
+
+.header #menu-h ul li ul li:hover {
+    display: block;
+    position: absolute;
+}
+
+.header #menu-h ul ul li a {
+    left: 0;
+    color: #1573a1;
+    background-color: rgba(235, 240, 217, 0.5);
+    margin: 15px 0;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: 2px solid black;
+    justify-items: center;
+    margin: 10px 0;
+}

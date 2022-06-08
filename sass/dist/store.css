@@ -1,0 +1,375 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+:root {
+  --blue: linear-gradient( -180deg, #6fc0f9 10%, #0a96f7 100%);
+}
+
+.marco, .contenido .presentacion .navigation-manual, .presentacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.presentacion .slides-control {
+  width: inherit;
+}
+.presentacion .slides-control .slide {
+  width: inherit;
+}
+
+.marco, .contenido .presentacion .navigation-manual, .presentacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* icono de menu  */
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?3ot2jt");
+  src: url("../fonts/icomoon.eot?3ot2jt#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?3ot2jt") format("truetype"), url("../fonts/icomoon.woff?3ot2jt") format("woff"), url("../fonts/icomoon.svg?3ot2jt#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "";
+}
+
+.icon-menu {
+  position: fixed;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100vh;
+  background-size: cover;
+  font-family: "Oswald", sans-serif;
+}
+
+h2 {
+  font-size: 1.1rem;
+  font-weight: bolder;
+  color: #419cca;
+  border: 1px solid #419cca;
+  width: 200px;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.6s ease-in;
+}
+h2:hover {
+  background-color: linear-gradient(--blue);
+}
+
+.burger-button {
+  position: fixed;
+  margin: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+  right: 0;
+  z-index: 1000;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.9);
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  right: -1025px;
+  padding: 10px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 10;
+  transition: 0.5s;
+}
+.header .logo img {
+  width: 150px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  animation-name: alfondo;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite, infinite;
+  animation-direction: alternate;
+}
+@keyframes alfondo {
+  0% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.header #menu {
+  width: 155px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+  transition: 0.2s ease-in;
+}
+.header #menu:hover {
+  background-color: #f6f2f1;
+}
+.header #menu:hover a {
+  color: rgba(0, 0, 0, 0.8);
+}
+.header #menu button {
+  display: block;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+}
+.header #menu button__:hover {
+  background-color: #088dd1;
+  margin-left: 0;
+}
+.header #menu ul {
+  list-style-type: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.header #menu ul__ ul {
+  display: none;
+  position: absolute;
+  transition: 1s;
+}
+.header #menu ul__ ul__ li a {
+  left: 0;
+  color: #1573a1;
+  background-color: rgba(235, 240, 217, 0.5);
+  margin: 15px 0;
+  /* padding-left: 0; */
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border: 2px solid black;
+  justify-items: center;
+  margin: 10px 0;
+}
+.header #menu ul__ li a {
+  width: 150px;
+  font-size: 1.4rem;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s all ease-in-out;
+}
+.header #menu ul__ li a__:hover {
+  background-color: #088dd1;
+  /* margin-top: 10px; */
+  /* margin-bottom: 10px; */
+  transition: 0.5s all ease-in-out;
+}
+.header #menu ul__ li a__ li ul {
+  margin: 0 0;
+}
+.header #menu ul__ li a__ li ul__ li:hover {
+  display: block;
+  position: absolute;
+}
+
+.header.is-active {
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  animation-name: rebote_lateral;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-in-out;
+}
+@keyframes rebote_lateral {
+  0% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(300px);
+  }
+  /* 60% {
+      transform: translateX(150px);
+  } */
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.swal-modal .swal-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.contenido .desarrollo {
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.56);
+  width: 100vw;
+  height: 50px;
+}
+.contenido .desarrollo p {
+  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 5px;
+}
+.contenido .presentacion {
+  width: 100vw;
+  height: 350px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.contenido .presentacion .slides {
+  width: 100%;
+  height: inherit;
+  overflow: hidden;
+  display: flex;
+}
+.contenido .presentacion .slides #radio1:checked ~ .first {
+  margin-left: 0;
+}
+.contenido .presentacion .slides #radio2:checked ~ .first {
+  margin-left: -100%;
+}
+.contenido .presentacion .slides #radio3:checked ~ .first {
+  margin-left: -200%;
+}
+.contenido .presentacion .slides #radio4:checked ~ .first {
+  margin-left: -300%;
+}
+.contenido .presentacion .slides input {
+  display: none;
+}
+.contenido .presentacion .slides .slide {
+  width: inherit;
+  height: inherit;
+  transition: 0.9s ease-in-out;
+}
+.contenido .presentacion .slides .slide img {
+  height: inherit;
+  width: 100vw;
+  object-fit: cover;
+}
+.contenido .presentacion .navigation-auto {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  margin-top: 270px;
+}
+.contenido .presentacion .navigation-auto div {
+  border: 2px solid #ffc300;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+.contenido .presentacion .navigation-auto div:not(:last-child) {
+  margin-right: 30px;
+}
+.contenido .presentacion .navigation-auto #radio1:checked ~ .navigation-auto .auto-btn1 {
+  background-color: rgba(246, 242, 241, 0.19);
+}
+.contenido .presentacion .navigation-auto #radio2:checked ~ .navigation-auto .auto-btn2 {
+  background-color: rgba(246, 242, 241, 0.19);
+}
+.contenido .presentacion .navigation-auto #radio3:checked ~ .navigation-auto .auto-btn3 {
+  background-color: rgba(246, 242, 241, 0.19);
+}
+.contenido .presentacion .navigation-auto #radio4:checked ~ .navigation-auto .auto-btn4 {
+  background-color: rgba(246, 242, 241, 0.19);
+}
+.contenido .presentacion .navigation-manual {
+  position: absolute;
+  padding: 5px;
+  border-radius: 20px;
+  margin-top: 270px;
+  border: 1px solid #fff;
+  transition: 0.4s ease-out;
+}
+.contenido .presentacion .navigation-manual:hover {
+  background-color: rgba(246, 242, 241, 0.19);
+}
+.contenido .presentacion .navigation-manual .manual-btn {
+  border: 2px solid #ffc300;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 1s;
+}
+.contenido .presentacion .navigation-manual .manual-btn:not(:last-child) {
+  margin-right: 30px;
+}
+.contenido .presentacion .navigation-manual .manual-btn:hover {
+  background: #ffc300;
+}
+.contenido .mi_trabajo .accesorios .accesorio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contenido .mi_trabajo .accesorios .accesorio .titulo {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.contenido .mi_trabajo .accesorios .accesorio .accesorio__contenedor {
+  border: 1px solid #000;
+  display: flex;
+  max-width: 450px;
+  min-width: 300px;
+  width: 340px;
+  overflow-x: scroll;
+}
+.contenido .mi_trabajo .accesorios .accesorio .accesorio__contenedor li {
+  list-style: none;
+  border: 1px solid #000;
+  width: 300px;
+  padding: 10px;
+  margin-right: 20px;
+}
+.contenido .mi_trabajo .accesorios .accesorio .accesorio__contenedor li .accesorio__tipo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 245px;
+  height: 320px;
+  margin: 0;
+}
+.contenido .mi_trabajo .accesorios .accesorio .accesorio__contenedor li .accesorio__tipo img {
+  width: 200px;
+}

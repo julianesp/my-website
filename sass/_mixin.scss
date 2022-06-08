@@ -1,0 +1,13 @@
+@mixin bottons {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background-color: #04c2ff;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 700;
+}

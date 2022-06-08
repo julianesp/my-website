@@ -1,0 +1,164 @@
+:root {
+  --blue: linear-gradient( -180deg, #6fc0f9 10%, #0a96f7 100%);
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  height: 100vh;
+  width: 100vw;
+}
+
+#particles-js {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: fixed;
+}
+
+.container {
+  position: relative;
+  height: inherit;
+  background: #373B44;
+  background: -webkit-gradient(linear, left bottom, left top, from(#4286f4), to(#373B44));
+  background: linear-gradient(to top, #4286f4, #373B44);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -ms-grid-rows: 30px 1fr 0.2fr;
+  grid-template-rows: 30px 1fr 0.2fr;
+}
+
+.container > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.container > *:nth-child(2) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+}
+
+.container > *:nth-child(3) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+.container .welcome {
+  color: #f6f2f1;
+}
+.container .welcome h3 {
+  font-size: 1.5em;
+  text-align: center;
+}
+.container .boton {
+  height: 280px;
+  margin: 120px 0;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container .boton button {
+  background: none;
+}
+.container .boton button img:nth-child(1) {
+  display: none;
+}
+.container .boton button img {
+  width: 40px;
+  border-radius: 50%;
+  border: 5px solid #f6f2f1;
+  padding: 10px;
+  -webkit-animation-name: pulso;
+          animation-name: pulso;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.container .boton button img:hover {
+  -webkit-animation: none;
+          animation: none;
+  display: none;
+}
+@-webkit-keyframes pulso {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+@keyframes pulso {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+.container .menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+.container .menu button {
+  width: 140px;
+  font-family: "Lato" sans-serif;
+  margin-bottom: 20px;
+  padding: 10px;
+  letter-spacing: 2.5px;
+  border-radius: 5px;
+  border: none;
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.1rem;
+  -webkit-transition: 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  will-change: width;
+  cursor: pointer;
+}
+.container .menu button:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+.container .menu button img {
+  width: 35px;
+  height: 35px;
+}
+.container .social {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  background: none;
+  border: none;
+  margin-bottom: 100px;
+  border-radius: 50%;
+}
+.container .social button {
+  background: none;
+  border: none;
+  width: 40px;
+  margin-right: 25px;
+  cursor: pointer;
+}
+.container .social button img {
+  width: 50px;
+  border-radius: 50%;
+}

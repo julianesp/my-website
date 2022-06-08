@@ -1,0 +1,197 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Tienda de accesorios
+
+        //- estilos para pagina
+        link(rel="stylesheet" href="../sass/store.css")
+        //- link(rel="stylesheet" href="../css/sing_up.css")
+        //- imagen de pestaña .ico 
+        link(rel="icon" href="./assets/img/logo-pestaña.ico")
+        link(rel="stylesheet" href="./css/font/flaticon.css")
+        link(rel="preconnect" href="https://fonts.gstatic.com")
+        link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap")
+        link(rel="icon", href="../assets/img/cerebro.ico")
+
+    body
+        <i class="icon-menu burger-button" id="burger-menu"></i>       
+        
+        header.header
+            nav
+                .logo
+                    a(href="https://julianesp.github.io/mystore/" title="Logo de mi empresa")
+                        img(src="../assets/img/Logo.png", alt="")
+
+                #menu
+                    ul
+                        li
+                            //- button(onclick="start()") Inicio
+                            a(href="../index.html") Inicio
+                #menu
+                    ul
+                        li
+                            a(href="../html/profile.html") Mi perfil
+                #menu
+                    ul
+                        li
+                            a(href="../html/valley.html") Registro
+                
+                 
+                //- #menu
+                //-     ul
+                //-         li
+                //-             a(href="#") Mi valle 
+                
+        main.contenido
+
+            //- .desarrollo                
+            //-     p En desarrollo
+
+            section.presentacion  
+
+                .slides 
+                    input(type="radio" name="radio-btn" id="radio1")
+                    input(type="radio" name="radio-btn" id="radio2")
+                    input(type="radio" name="radio-btn" id="radio3")
+                    input(type="radio" name="radio-btn" id="radio4")
+
+                    .slide.first 
+                        img(src="../assets/img/presentacion/park.jpg", alt="")                 
+                    .slide 
+                        img(src="../assets/img/presentacion/trabajo_1.png", alt="")
+                    .slide 
+                        img(src="../assets/img/presentacion/trabajo_2.png", alt="")
+                    .slide 
+                        img(src="../assets/img/presentacion/trabajo_1.png", alt="")
+
+                
+                //- .slider
+                //-     ul 
+                //-         li 
+
+                //-             img(src="./assets/img/presentacion/presentation.jpg" alt="") 
+                //-         li 
+                //-             img(src="./assets/img/sistemas/linux/debian.png" alt="") 
+                //-         li 
+                //-             img(src="./assets/img/presentacion/presentation.jpg" alt="") 
+                //-         li 
+                //-             img(src="./assets/img/presentacion/presentation.jpg" alt="") 
+                -//            
+
+                .navigation-auto 
+                    .auto-btn1 
+                    .auto-btn2 
+                    .auto-btn3 
+                    .auto-btn4
+                            
+
+                .navigation-manual 
+                    label(for="radio1" class="manual-btn") 
+                    label(for="radio2" class="manual-btn") 
+                    label(for="radio3" class="manual-btn") 
+                    label(for="radio4" class="manual-btn") 
+
+            section.mi_trabajo 
+                section.accesorios              
+                    section.accesorio 
+                        .titulo 
+                            h2 Accesorios celularess
+
+                        ul.accesorio__contenedor  
+                            li 
+                                .accesorio__tipo                                 
+                                    h4 Cable USB tipo C - Uslion
+                                    img(src="../assets/img/accesorios/celulares/usb-c.png", alt="")
+                                    p $23.000
+                                    a(href="https://julianesp.com/categoria-producto/accesorios/celulares/?add-to-cart=258" rel="noopener" target="_blank") Comprar
+                            
+                            li 
+                                .accesorio__tipo 
+                                    h4 Cargador multi-entrada
+                                    img(src="../assets/img/accesorios/celulares/carga2.png", alt="Cargador multi entrada")
+                                    p $25.000
+                                    a(href="https://julianesp.com/categoria-producto/accesorios/celulares/?add-to-cart=258" rel="noopener" target="_blank") Comprar
+
+                            li 
+                                .accesorio__tipo 
+                                    h4 Cargador Micro USB
+                                    img(src="../assets/img/accesorios/celulares/cargador-micro.png", alt="Cargador para celular")
+                                    p $25.000
+                                    a(href="https://julianesp.com/categoria-producto/accesorios/celulares/?add-to-cart=258" rel="noopener" target="_blank") Comprar 
+
+                            li 
+                                button(onclick="cellphone()") Ver más
+
+
+                    section.accesorio 
+                        .titulo
+                            h2 Accesorios computador
+
+                        ul.accesorio__contenedor  
+                            li 
+                                .accesorio__tipo                                 
+                                    h4 Mouse inalámbrico
+                                    img(src="../assets/img/accesorios/laptops/mouse-ina.png", alt="Mouse inalámbrico")
+                                    p $25.000
+                                    a(href="https://julianesp.com/categoria-producto/accesorios/celulares/?add-to-cart=258" rel="noopener" target="_blank") Comprar
+                            
+                            li 
+                                .accesorio__tipo 
+                                    h4 Memoria USB 3.0
+                                    img(src="../assets/img/accesorios/laptops/usb-16.png", alt="Memoria USB 3.0 Sandisk 16 gigas")
+                                    p $32.000
+                                    a(href="https://julianesp.com/categoria-producto/accesorios/celulares/?add-to-cart=258" rel="noopener" target="_blank") Comprar                        
+                            
+                            li 
+                                .accesorio__tipo 
+                                    h4 Router TP-Link WR940N
+                                    img(src="../assets/img/accesorios/laptops/router-450.png", alt="")
+                                    p $125.000
+                                    a(href="https://julianesp.com/categoria-producto/accesorios/celulares/?add-to-cart=258" rel="noopener" target="_blank") Comprar 
+
+                            li 
+                                button(onclick="laptop()") Ver más
+
+                    section.accesorio 
+                        .titulo
+                            h2 Libros
+
+                        ul.accesorio__contenedor  
+                            li 
+                                .accesorio__tipo                                 
+                                    h4 Circuitos eléctricos
+                                    img(src="../assets/img/accesorios/books/circuitos.png", alt="Fundamentos de circuitos eléctricos")
+                                    p $43.000
+                                    a(href="https://julianesp.com/categoria-producto/accesorios/celulares/?add-to-cart=258" rel="noopener" target="_blank") Comprar
+                            
+                            li 
+                                .accesorio__tipo 
+                                    h4 Mentes extraordinarias
+                                    img(src="../assets/img/accesorios/books/mentes.png", alt="El código de las mentes extraordinarias")
+                                    p $55.000
+                                    a(href="https://julianesp.com/categoria-producto/accesorios/celulares/?add-to-cart=258" rel="noopener" target="_blank") Comprar                        
+                            
+                            li 
+                                .accesorio__tipo 
+                                    h4 El empresario
+                                    img(src="../assets/img/accesorios/books/elon.png", alt="El empresario que anticipa el futuro")
+                                    p $53.000
+                                    a(href="https://julianesp.com/categoria-producto/accesorios/celulares/?add-to-cart=258" rel="noopener" target="_blank") Comprar 
+
+                            li 
+                                button(onclick="laptop()") Ver más   
+
+                section.job 
+                    //- fondo oscuro
+                    .develop 
+                        p Espacio para publicar mi trabajo como desarrollador, analista de sistemas y técnico de sistemas
+
+        script(src="../js/animations.js")  
+        script(src="../js/functions.js")
+        script(src="../js/links.js") 
+        script(src="https://unpkg.com/sweetalert/dist/sweetalert.min.js")               
+
+//-aquí debe ir block para seguir agregando el contenido de la pagina

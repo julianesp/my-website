@@ -1,0 +1,265 @@
+/* tipo de letra */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+/* icono de menu  */
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?3ot2jt');
+    src: url('../fonts/icomoon.eot?3ot2jt#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?3ot2jt') format('truetype'), url('../fonts/icomoon.woff?3ot2jt') format('woff'), url('../fonts/icomoon.svg?3ot2jt#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+    content: "\e9bd";
+}
+
+.icon-menu {
+    position: fixed;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-size: cover;
+    background-color: #FFF;
+    font-family: 'Oswald', sans-serif;
+}
+
+.burger-button {
+    position: fixed;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(253, 171, 1, .7);
+    color: #000;
+    line-height: 50px;
+    text-align: center;
+    right: 0;
+    z-index: 20;
+}
+
+h3 {}
+
+.header {
+    background-color: rgba(0, 0, 0, .4);
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    right: -1025px;
+    padding: 10px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+    transition: .5s;
+}
+
+.header.is-active {
+    right: 0;
+}
+
+.header #menu-h {
+    text-align: center;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.header #menu-h img {
+    align-items: center;
+    width: 35px;
+}
+
+.header #menu-h a {
+    display: block;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.header #menu-h a:hover {
+    color: white;
+    background-color: #088DD1;
+    margin-left: 0;
+}
+
+.header #menu-h ul {
+    list-style-type: none;
+}
+
+.header #menu-h ul ul {
+    display: none;
+    position: absolute;
+    transition: 1s;
+}
+
+.header #menu-h ul li a {
+    width: 150px;
+    font-size: 1.4rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header #menu-h ul li a:hover {
+    background-color: #088DD1;
+    /* margin-top: 10px; */
+    /* margin-bottom: 10px; */
+}
+
+.header #menu-h ul li ul {
+    margin: 0 0;
+}
+
+.header #menu-h ul li ul li:hover {
+    display: block;
+    position: absolute;
+}
+
+.header #menu-h ul ul li a {
+    /* margin: 15px 0; */
+    left: 0;
+    color: #1573a1;
+    background-color: rgba(235, 240, 217, 0.5);
+    margin: 15px 0;
+    /* padding-left: 0; */
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: 2px solid black;
+    justify-items: center;
+    margin: 10px 0;
+}
+
+.header a {
+    border: 1px solid brown;
+    padding: 5px 0;
+    /* margin: 10px 0; */
+}
+
+
+/* contenido */
+
+.contenido {}
+
+
+/* ------------------------------- */
+
+.contenido .logo {
+    width: 100vw;
+    height: 70px;
+    text-align: center;
+    background: linear-gradient(70deg, #6FC0F9 7%, #0A96F7 20%);
+}
+
+.contenido .logo img {
+    width: 150px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* ----------- footer ------------*/
+
+footer {
+    background: linear-gradient(70deg, #6FC0F9 7%, #0A96F7 20%);
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .info-desa h3 {
+    font-weight: 300;
+    font-size: 1.2em;
+    line-height: 10px;
+    font-style: italic;
+    color: white;
+}
+
+footer .info-desa h3 img {
+    width: 40px;
+}
+
+footer .social-desa h1 {
+    color: #f3ff3b;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 5px;
+    line-height: 10px;
+}
+
+footer .social-desa a img {
+    width: 50px;
+    margin: 0 20px;
+    transform: scale();
+}
+
+footer .social-desa a img:hover {
+    animation-name: aumentar;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aumentar {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+footer .social-desa h3 {
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 30px;
+}
+
+footer .social-desa h3 img {
+    width: 30px;
+    padding-right: 10px;
+}
+
+footer .fuentes h3 {
+    color: #fff;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+footer .fuentes p {
+    font-size: .7rem;
+    margin-top: 30px;
+    color: #fff;
+    font-style: italic;
+    margin: 0;
+}

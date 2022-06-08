@@ -1,0 +1,1153 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?tc7q2y');
+    src: url('../fonts/icomoon.eot?tc7q2y#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?tc7q2y') format('truetype'), url('../fonts/icomoon.woff?tc7q2y') format('woff'), url('../fonts/icomoon.svg?tc7q2y#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+    content: "\e9bd";
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    /*orden vertical de los elementos*/
+    flex-direction: column;
+    height: 100%;
+    /*se expande ocupando todo el espacio sobrante*/
+    background-color: #78b0d1;
+    margin: 0 0;
+    /* para que el contenido web quede arriba de las particulas */
+    z-index: 99;
+    background-size: cover;
+}
+
+#particles-js {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -100;
+}
+
+a {
+    text-decoration: none;
+    display: inline;
+}
+
+.icon-menu {
+    display: none;
+}
+
+
+/*esta parte es para los enlaces de navegacion*/
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: #419CCA;
+    align-items: center;
+}
+
+
+/* 
+.container .header-icons-container {
+    display: inline-block;
+    text-align: center;
+    padding: 15px 0;
+    align-items: center;
+} */
+
+
+/* 
+.container .header-icons-container #menu-h .inicio {
+    width: 10px;
+} */
+
+
+/* 
+.container .header-icons-container img {
+    width: 200px;
+}
+
+.container .header-icons-container a {
+    float: right;
+    margin-top: 3%;
+    margin-right: 80px;
+}
+
+.container .header-icons-container a:hover {
+    color: #efc243;
+    font-weight: bold;
+    left: 0;
+} */
+
+
+/* 
+.container .header-icons-container .inicio {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 2px 2px white;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+} */
+
+
+/* menu desplegable */
+
+.container #menu-h {
+    /* border: .5px solid white; */
+    justify-self: center;
+}
+
+
+/* posicionamiento central del logo */
+
+.container #menu-h img {
+    align-items: center;
+    width: 200px;
+}
+
+.container #menu-h ul {
+    /* dejar en fila */
+    display: flex;
+}
+
+.container #menu-h a {
+    /* color del texto */
+    color: #fff;
+    display: block;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 2px 2px white;
+    margin-top: 3%;
+    padding: 5px;
+    font-size: 1em;
+}
+
+.container #menu-h a:hover {
+    color: white;
+    background-color: #088DD1;
+    margin-left: 0;
+}
+
+.container #menu-h ul ul {
+    display: none;
+    position: absolute;
+}
+
+.container #menu-h ul li ul {
+    margin: 0 0;
+}
+
+
+/* 
+hacer que aparezca despues de nos milisegundos de posicionar el cursor sobre Categorias
+#menu-h ul li ul li:hover {
+    transition-delay: 1s;
+} */
+
+#menu-h ul ul li a {
+    /* margin: 15px 0; */
+    left: 0;
+    color: #1573a1;
+    background-color: rgba(235, 240, 217, 0.5);
+    margin: 15px 0;
+    /* padding-left: 0; */
+    text-align: center;
+}
+
+#menu-h ul ul li a:hover {}
+
+#menu-h ul li:hover ul {
+    display: block;
+}
+
+header {
+    width: 100%;
+}
+
+.header-icons-container {
+    width: 100%;
+    height: 30px;
+    background-color: #419CCA;
+    align-items: center;
+}
+
+.icons {
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: end;
+    margin-right: 50px;
+}
+
+.icons .inicio {
+    position: absolute;
+    left: 80px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 2px 2px white;
+    color: white;
+}
+
+.home-logo {
+    max-height: 100px;
+    height: 1000px;
+}
+
+.home-logo img {
+    width: 250px;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
+.home-logo .home-logo-face {
+    width: 40px;
+    float: right;
+    margin-right: 80px;
+}
+
+
+/* otra section */
+
+.home-main {
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 90%;
+    width: 100%; */
+}
+
+.home-productos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 100%;
+}
+
+
+/* 
+.home-productos .home-articulos h3 {
+    margin: 40px 0 30px 0;
+    border: 3px solid green;
+    width: 300px;
+    border-radius: 10px;
+    padding: 5px 0;
+    box-shadow: 4px 4px 10px gray;
+    font-weight: bold;
+    color: white;
+    background-color: #6AB22F;
+    height: 30px;
+    text-align: center;
+    justify-self: center;
+} */
+
+
+/* formateo y mantenimiento */
+
+.home-main .home-productos #reducir {
+    margin-bottom: 20px;
+}
+
+.home-main .home-trabajo {
+    /* display: grid; */
+    /* grid-template-rows: 1fr; */
+    /* grid-template-rows: 50px 50px 50px / 100px 100px 100px; */
+    margin: 0 80px;
+}
+
+
+/* estilos para titulo */
+
+.home-main .home-productos h2 {
+    margin: 40px 0 30px 0;
+    border: 3px solid green;
+    width: 300px;
+    border-radius: 10px;
+    padding: 5px 0;
+    box-shadow: 4px 4px 10px gray;
+    font-weight: bold;
+    color: white;
+    background-color: #6AB22F;
+    height: 30px;
+    text-align: center;
+    justify-self: center;
+}
+
+
+/*titulo del tipo de accesorio*/
+
+.home-main .home-productos h3 {
+    margin: 40px 0;
+    border: 1px solid green;
+    width: 240px;
+    border-radius: 10px;
+    padding: 5px 0;
+    box-shadow: 4px 4px 10px gray;
+    font-weight: bold;
+    color: white;
+    background-color: #6AB22F;
+    height: 30px;
+    text-align: center;
+    justify-self: center;
+}
+
+.home-main .home-trabajo .sistemasoperativos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    border-radius: 25px;
+    height: 50%;
+}
+
+.home-main .home-trabajo .sistemasoperativos .trabajo-2 {
+    height: 100px;
+    grid-row: 1;
+    justify-self: center;
+}
+
+.home-main .home-trabajo .sistemasoperativos .linux {
+    display: grid;
+    /* grid-template-columns: repeat(2, minmax(0%, 1.9fr)); */
+    grid-template-columns: 1fr 1fr;
+    /* se va a poner un margen externo de 10px */
+    gap: 25px;
+    height: 400px;
+    width: 80%;
+    padding: 10px 10px;
+    overflow: auto;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: -5px 5px 5px rgb(238, 231, 231);
+    align-items: center;
+    justify-self: center;
+}
+
+.home-main .home-trabajo .sistemasoperativos .linux #namesisope {
+    justify-self: center;
+    align-self: center;
+    padding: 20px;
+    border-radius: 5px;
+    color: orange;
+}
+
+.home-main .home-trabajo .sistemasoperativos .windows #namesisope {
+    justify-self: center;
+    align-self: center;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+}
+
+.home-main .home-trabajo .sistemasoperativos .linux:nth-of-type(3) {
+    /* background: #c72c37; */
+}
+
+.home-main .home-trabajo .sistemasoperativos .windows {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0%, 1fr));
+    gap: 25px;
+    height: 400px;
+    width: 80%;
+    margin: 30px 0;
+    padding: 10px 10px;
+    overflow: auto;
+    align-items: center;
+    justify-self: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: -5px 5px 5px rgb(238, 231, 231);
+}
+
+
+/* editando la barra de desplazamiento vertical */
+
+.home-main .home-trabajo .sistemasoperativos .windows::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.home-main .home-trabajo .sistemasoperativos .windows::-webkit-scrollbar:vertical {
+    width: 10px;
+}
+
+.home-main .home-trabajo .sistemasoperativos .windows:-webkit-scrollbar-button:increment,
+.home-main .home-trabajo .sistemasoperativos .windows::-webkit-scrollbar-button {
+    display: none;
+}
+
+.home-main .home-trabajo .sistemasoperativos .windows::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.home-main .home-trabajo .sistemasoperativos .windows::-webkit-scrollbar-thumb {
+    background-color: #d16d6d;
+    border-radius: 40px;
+    border: 1px solid #fff;
+}
+
+.home-main .home-trabajo .sistemasoperativos .windows::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+
+/* editando la barra de desplazamiento vertical para linux */
+
+.home-main .home-trabajo .sistemasoperativos .linux::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.home-main .home-trabajo .sistemasoperativos .linux::-webkit-scrollbar:vertical {
+    width: 10px;
+}
+
+.home-main .home-trabajo .sistemasoperativos .linux:-webkit-scrollbar-button:increment,
+.home-main .home-trabajo .sistemasoperativos .linux::-webkit-scrollbar-button {
+    display: none;
+}
+
+.home-main .home-trabajo .sistemasoperativos .linux::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.home-main .home-trabajo .sistemasoperativos .linux::-webkit-scrollbar-thumb {
+    background-color: #d16d6d;
+    border-radius: 40px;
+    border: 1px solid #fff;
+}
+
+.home-main .home-trabajo .sistemasoperativos .linux::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+
+/* con estas propiedades solo pinta el elemento en esa posicion  */
+
+.home-main .home-trabajo .sistemasoperativos .linux h4:nth-of-type(1) {
+    background: rgba(255, 255, 255, .6);
+    /* zona por cubrir */
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    margin-top: 0;
+}
+
+
+/* con estas propiedades solo pinta el elemento en esa posicion  */
+
+.home-main .home-trabajo .sistemasoperativos .windows h4:nth-of-type(1) {
+    background: rgba(232, 215, 4, 0.8);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    margin-top: 0;
+}
+
+.home-main .home-trabajo .sistemasoperativos .linux h4 {
+    border: 1px solid white;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.home-main .home-trabajo .sistemasoperativos .windows h4 {
+    border: 1px solid white;
+    box-shadow: 5px 5px 5px gray;
+}
+
+
+/* distribuciones linux */
+
+.home-main .home-trabajo .sistemasoperativos .linux .arch {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    border: 2px solid gray;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gray;
+    align-items: center;
+    text-align: center;
+    justify-self: center;
+    padding: 10px;
+    /* background-color: #d1c408; */
+    background-color: rgba(76, 92, 235, 0.5);
+    height: 260px;
+    width: 90%;
+    position: relative;
+    /* opacity: 0; */
+}
+
+.home-main .home-trabajo .sistemasoperativos .windows .arch {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    border: 2px solid gray;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gray;
+    align-items: center;
+    text-align: center;
+    justify-self: center;
+    padding: 10px;
+    /* background-color: #d1c408; */
+    background-color: rgba(76, 92, 235, 0.5);
+    height: 260px;
+    width: 80%;
+    position: relative;
+    /* opacity: 0; */
+}
+
+.home-main .home-trabajo .sistemasoperativos .linux .arch p {
+    color: white;
+    margin: 5px 0;
+    font-size: 1.5em;
+}
+
+.home-main .home-trabajo .sistemasoperativos .linux .arch img {
+    width: 200px;
+    height: 150px;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    justify-self: center;
+    transition-delay: opacity .5s;
+    margin-bottom: 10px;
+    /* opacity: 1; */
+}
+
+.home-main .home-trabajo .sistemasoperativos .linux .arch #ocultar {
+    display: none;
+    background-color: #83c9ec;
+}
+
+.home-main .home-trabajo .sistemasoperativos .linux .arch #ocultar:hover {
+    display: block;
+    position: absolute;
+}
+
+.home-main .home-trabajo .sistemasoperativos .windows .arch.image {
+    width: 50px;
+}
+
+.home-main .home-trabajo .sistemasoperativos .windows .arch p {
+    color: white;
+    margin: 5px 0;
+    font-size: 1.5em;
+}
+
+.home-main .home-trabajo .sistemasoperativos .windows .arch img {
+    width: 200px;
+    height: 150px;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    justify-self: center;
+    transition-delay: opacity .5s;
+    margin-bottom: 10px;
+    /* opacity: 1; */
+}
+
+.home-main .home-trabajo .sistemasoperativos .windows .arch #ocultar {
+    display: none;
+    background-color: #83c9ec;
+}
+
+.home-main .home-trabajo .sistemasoperativos .windows .arch #ocultar:hover {
+    display: block;
+    position: absolute;
+}
+
+
+/* programas básicos */
+
+.home-productos .home-trabajo .slider-2 {
+    display: grid;
+    grid-template: repeat(2, 1fr);
+    border: 5px solid red;
+    background: #EAB016;
+    margin: auto;
+    /* para mostrar una sola imagen a la vez */
+    overflow: hidden;
+}
+
+.home-productos .home-trabajo .slider-2 ul {
+    display: flex;
+    width: 90%;
+    padding: 0;
+    /*imagenes en movimiento*/
+    /* animation: cambio 20s infinite alternate; */
+}
+
+.home-productos .home-trabajo .slider-2 ul li {
+    width: 100%;
+    margin: 0 40px;
+}
+
+
+/* para las imagenes */
+
+.home-productos .home-trabajo .slider-2 img {
+    width: 70%;
+    height: 200px;
+    border-radius: 20px;
+    border: 2px solid white;
+    box-shadow: 10px 10px 10px gray;
+    margin-top: 10px;
+}
+
+.home-productos .home-trabajo .slider-2 .slider-for li img {
+    width: 100%;
+}
+
+
+/* escoger la imagen por ver */
+
+.home-main .home-productos .home-trabajo .menu-for {
+    /* para el alto de los botones */
+    padding: 30px 0;
+    /* centrar los botones */
+    text-align: center;
+}
+
+.home-main .home-productos .home-trabajo .menu-for li {
+    display: inline-block;
+    text-align: center;
+}
+
+
+/* botones para cambiar las imagenes de formateo  */
+
+.home-main .home-productos .home-trabajo .menu-for li a {
+    display: inline-block;
+    color: white;
+    background-color: rgb(77, 146, 224);
+    padding: 20px;
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+    box-shadow: 9px 1px 3px gray;
+    /* border-left: 1px solid black; */
+}
+
+
+/* paradas de las animaciones */
+
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+    20% {
+        margin-left: 0;
+    }
+    25% {
+        margin-left: -100%;
+    }
+    45% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    75% {
+        margin-left: -300%;
+    }
+    100% {
+        margin-left: -300%;
+    }
+}
+
+
+/* desarrollo de páginas web */
+
+.home-main .home-productos .developmentweb {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    color: #c72c37;
+    border: 3px solid green;
+    width: 80%;
+    height: 400px;
+    background-color: #419CCA;
+    /* centrar contenido vertical interno */
+    align-items: center;
+    /* centrar contenido horizontal interno */
+    text-align: center;
+    /* centrar contenedor en el viewport */
+    justify-self: center;
+}
+
+
+/*contenedor de publicidad*/
+
+.home-main .home-productos .home-publicidad {
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: auto;
+    /* background-color: yellowgreen; */
+    margin-top: 30px;
+    /*centrar el contenido*/
+    text-align: center;
+}
+
+.home-main .home-productos .home-publicidad .slider {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    /* border: 2px solid black; */
+}
+
+
+/*código para los slider*/
+
+.home-main .home-productos .home-publicidad ul,
+li {
+    padding: 0;
+    margin: 0;
+    /*para quitar los puntos de las listas desordenadas*/
+    list-style: none;
+}
+
+.home-main .home-productos .home-publicidad ul.slider {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+.home-main .home-productos .home-publicidad ul.slider li {
+    /* position: absolute; */
+    left: 0px;
+    top: 0px;
+    /*para que todos se oculten*/
+    /* opacity: 0; */
+    border: 2px solid yellowgreen;
+    transition: opacity .5s;
+    /* background-color: white; */
+}
+
+.home-main .home-productos .home-publicidad ul.slider li img {
+    width: 150px;
+    height: 300px;
+    /*para que la imagen no se deforme y conserve toda su imagen sin recortar*/
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px gray;
+    position: relative;
+    z-index: 1100;
+}
+
+
+/* flechas */
+
+.home-main .home-productos .home-publicidad a img {
+    width: 150px;
+    position: absolute;
+    z-index: 1200;
+}
+
+.home-main .home-productos .home-publicidad a .fleclaleft {
+    left: 20px;
+}
+
+.home-main .home-productos .home-publicidad ul.slider li:first-child {
+    opacity: 1;
+    /*Mostramos el primer <li>*/
+}
+
+.home-main .home-productos .home-publicidad ul.slider li:target {
+    opacity: 1;
+    /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+.home-main .home-productos .home-publicidad .menu {
+    /* para el alto de los botones */
+    padding: 30px 0;
+    /* centrar los botones */
+    text-align: center;
+}
+
+.home-main .home-productos .home-publicidad .menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+.home-main .home-productos .home-publicidad .menu li a {
+    display: inline-block;
+    color: white;
+    background-color: rgb(63, 114, 172);
+    padding: 20px;
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+    box-shadow: 9px 1px 3px gray;
+    border-left: 1px solid black;
+}
+
+.home-main .home-productos .home-publicidad .menu li a:hover {
+    background-color: mediumseagreen;
+}
+
+.home-productos .articulos {
+    display: grid;
+    /* para quitar desplazamiento */
+    /* overflow: hidden; */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 30px;
+}
+
+
+/*contenedor de cada artículo*/
+
+.home-productos .articulos div {
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr; */
+    /* border: 1px solid blue; */
+    border-radius: 4px;
+    /* box-shadow: 4px 4px chartreuse; */
+    height: 230px;
+    width: 100%;
+    text-align: center;
+}
+
+.home-productos .articulos h4 {
+    font-weight: bold;
+    color: #419CCA;
+    font-size: 20px;
+    text-decoration: underline;
+    grid-row: 1;
+}
+
+.home-productos .articulos div li {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.home-productos .articulos .articulos-section div li ul img {
+    float: left;
+    grid-row: 2;
+}
+
+.home-productos .articulos .articulos-section {
+    border: 2px solid #6A6868;
+    height: 100%;
+    box-shadow: 4px 4px 20px #999;
+    background-color: rgba(235, 240, 217, 0.5);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.home-productos .articulos .articulos-section div {
+    padding: 0 0;
+}
+
+.home-productos .articulos .articulos-section div li ul {
+    padding: 0 10px;
+    margin: 0 0;
+}
+
+
+/* dentro del contenedor de la imagen */
+
+.home-productos .articulos .articulos-section div li ul img {
+    width: 150px;
+    height: 170px;
+    margin: 0;
+    padding: 0;
+}
+
+.home-productos .articulos .articulos-section div li {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 0 0;
+    justify-self: center;
+}
+
+.home-productos .articulos .articulos-section img {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1px;
+    box-shadow: 4px 4px 4px #D8A866;
+    /* font-weight: bold; */
+    /* color: #339B1F; */
+    /* margin-bottom: 40px; */
+    /* padding-left: 15px; */
+    /* margin-right: 20px; */
+}
+
+.home-productos .articulos .articulos-section {
+    /*alinear el enlace de compra al centro*/
+    justify-items: center;
+}
+
+.home-productos .articulos .articulos-section div {
+    height: 185px;
+}
+
+.home-productos .articulos .articulos-section a {
+    display: flex;
+    align-items: center;
+    /* text-align: center; */
+    /*centrar texto horizontal*/
+    justify-content: center;
+    /* border: 1px solid black; */
+    border: 1px solid #6A6868;
+    border-radius: 3px;
+    padding: 5px 5px;
+    /* box-shadow: 3px 3px gray; */
+    font-weight: bold;
+    /* margin-bottom: 40px; */
+    font-size: 19px;
+    height: 30px;
+    width: 120px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 4px 4px 7px gray;
+    /*color de fuente del enlace*/
+    color: white;
+    /*color de relleno del boton del enlace*/
+    background-color: #c72c37;
+}
+
+.home-productos .articulos .articulos-section a:hover {
+    color: #efc243;
+    font-weight: bolder;
+}
+
+.home-articulos {
+    margin: 0 80px;
+    text-align: center;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    background-color: #419CCA;
+    /* para centrar elementos verticalmente */
+    align-items: center;
+}
+
+footer .desarrollador {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    margin: 20px 80px;
+    justify-self: start;
+}
+
+footer .desarrollador h2 {
+    color: #EAB016;
+    font-weight: bolder;
+}
+
+footer .desarrollador h3 {
+    font-size: .9em;
+    color: white;
+    margin-left: 80px;
+    /* box-shadow: 2px 2px 2px gray; */
+}
+
+footer .desarrollador a img {
+    width: 50px;
+    margin: 0 20px;
+}
+
+footer .desarrollador h3 img {
+    width: 30px;
+    padding-right: 10px;
+}
+
+
+/*para vista debajo de 1024px*/
+
+@media screen and (max-width: 1024px) {
+    .body {
+        background-color: #78b0d1;
+    }
+    .body .container {
+        font-size: 1.5em;
+    }
+    .body .container {
+        height: auto;
+        display: inline-block;
+        /* para centrar el texto */
+        text-align: center;
+    }
+    .body .container #menu-h {
+        /* width: 150px;
+        height: 10px;
+        margin: 20px 0; */
+        font-size: .6em;
+        justify-content: center;
+    }
+    .body .container #menu-h ul {
+        /* display: flex; */
+        text-align: center;
+        justify-content: center;
+    }
+    #menu-h ul ul {
+        display: none;
+        position: absolute;
+    }
+    .container #menu-h img {
+        margin-top: 30px;
+    }
+    .body .container #menu-h .inicio {
+        display: inline-block;
+    }
+    .home-logo {
+        width: 100%;
+        text-align: center;
+    }
+    .home-logo img {
+        height: 85px;
+        width: 350px;
+    }
+    .home-main {
+        /* esto sirvió para bajar el footer donde es */
+        height: 100%;
+    }
+    .home-trabajo .slider-2 .slider-for {
+        text-align: center;
+    }
+    .home-trabajo .slider-2 .slider-for li img {
+        width: 150px;
+    }
+    .home-productos {
+        /* display: grid; */
+        /*para alinear texto se usa justity-items*/
+        justify-items: center;
+        margin-top: 50px;
+    }
+    .home-productos h3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 600px;
+        height: 70px;
+        font-size: 1em;
+    }
+    .home-productos .articulos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .home-productos .articulos .articulos-section h4 {
+        font-size: 1.5em;
+        margin-top: 20px;
+        /* margin-bottom: 20px; */
+        text-decoration-line: underline;
+    }
+    /*tamaño de las imagenes*/
+    .home-productos .articulos .articulos-section div li ul img {
+        width: 120px;
+    }
+    .home-productos .articulos .articulos-section a {
+        margin-top: 25px;
+        font-size: 1.4em;
+        width: 150px;
+        height: 60px;
+    }
+    .home-main .home-productos .home-publicidad ul.slider {
+        width: 100%;
+    }
+    .home-main .home-productos .home-publicidad .slider li img {
+        object-fit: cover;
+    }
+    .footer {
+        display: grid;
+        height: max-content;
+        margin-top: 20px;
+        /* background-color: red; */
+        padding: 20px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .icon-menu {
+        width: 100px;
+        height: 1000px;
+    }
+    #particles-js {
+        /* display: none; */
+    }
+    .burguer-button {
+        width: 60px;
+        height: 50px;
+        padding-top: 10px;
+        top: 10px;
+        left: 10px;
+        border-radius: 50%;
+        background-color: white;
+        color: black;
+        display: block;
+        font-size: 2em;
+        line-height: 40px;
+        text-align: center;
+        position: fixed;
+    }
+    .container {
+        display: inline-block;
+        text-align: center;
+    }
+    .container #menu-h {
+        justify-self: center;
+    }
+    .home-productos h3 {
+        font-size: .8em;
+    }
+    .home-articulos .articulos {
+        background-color: transparent;
+    }
+    .home-articulos .articulos .articulos-section {
+        background-color: aliceblue;
+    }
+    .home-articulos .articulos .articulos-section h4 {
+        font-size: 1.5em;
+    }
+}

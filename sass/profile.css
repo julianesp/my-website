@@ -1,0 +1,50 @@
+.dev {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(246, 242, 241, 0.9);
+  padding: 20px 0;
+}
+.dev .img img {
+  width: 200px;
+  border-radius: 5px;
+}
+.dev .description {
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+.dev .description h2 {
+  font-size: 2em;
+  color: #000;
+  font-weight: 300;
+  text-align: center;
+}
+.dev .description p {
+  color: #000;
+  font-size: 1.2em;
+  font-weight: 400;
+  justify-self: center;
+  align-items: center;
+  line-height: 40px;
+  letter-spacing: 1px;
+  padding: 20px;
+}
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=profile.css.map */

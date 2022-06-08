@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.contenedor-header {
+    width: 100%;
+    height: 70px;
+    background-color: #0A96F7;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 90px;
+    align-items: center;
+    align-content: center;
+    justify-content: right;
+    position: relative;
+}
+
+.contenedor-header .header1 {
+    margin-right: 80px;
+    font-weight: bolder;
+    text-align: center;
+    align-items: center;
+    justify-self: right;
+}
+
+.contenedor-header .header1 a {
+    font-size: 1.2em;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 2px 2px white;
+}
+
+.contenedor-header .header1 a:hover {
+    background-color: #088DD1;
+}
+
+.contenido .presentacion {
+    height: 500px;
+    /* background-color: #C4C4C6; */
+    /* background-color: #a1a1a1; */
+    background: linear-gradient(70deg, #6FC0F9 7%, #0A96F7 20%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 10px;
+    text-align: center;
+}
+
+.contenido .presentacion .img {
+    border-radius: 10px;
+    align-self: center;
+    transform: rotate(-25deg);
+    transition: .5s;
+}
+
+.contenido .presentacion .img .img-photo {
+    width: 60%;
+    height: 450px;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px gray;
+    transform: scale(.8);
+}
+
+.contenido .presentacion .img:hover {
+    transform: scale(1);
+    transform: rotate(0deg);
+}
+
+.contenido .descripcion {
+    animation-name: description;
+    animation-duration: 5s;
+    margin-right: 80px;
+    align-self: center;
+    text-align: right;
+}
+
+@keyframes description {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.contenido .presentacion .descripcion h2 {
+    font-size: 2em;
+    color: #f3ff3b;
+    font-weight: bolder;
+}
+
+.contenido .presentacion .descripcion p {
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    justify-self: center;
+    align-items: center;
+    line-height: 50px;
+}
+
+.contenido .tiempo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr;
+    gap: 10px;
+    padding: 70px 0;
+    text-align: center;
+    justify-self: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.contenido .tiempo .tiempo-titulo {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+}
+
+.contenido .tiempo .tiempo-titulo h2 {
+    font-size: 1.2em;
+    display: inline-block;
+    position: relative;
+    justify-self: center;
+}
+
+
+/* lineas a los costados */
+
+.contenido .tiempo .tiempo-titulo h2::after,
+.contenido .tiempo .tiempo-titulo h2::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 5px;
+    background-color: #ed143d;
+    top: .6em;
+}
+
+.contenido .tiempo h2::before {
+    left: -140px;
+}
+
+.contenido .tiempo h2::after {
+    right: -140px;
+}
+
+.contenido .tiempo .tiempo-dividido {
+    width: 1000px;
+    justify-items: center;
+    justify-self: center;
+    line-height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.contenido .tiempo .tiempo-dividido .actividades {
+    width: 450px;
+    height: 310px;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 1fr;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 20px;
+    background-color: #DEF3F3;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.contenido .tiempo .tiempo-dividido .actividades h4 {
+    color: #ed143d;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.contenido .tiempo .tiempo-dividido .actividades p {
+    color: #1B678C;
+    font-size: 1.2em;
+    font-weight: bolder;
+    margin: 0;
+    padding: 0 5px;
+}
+
+footer {
+    background: linear-gradient(70deg, #6FC0F9 7%, #0A96F7 20%);
+    border: 1px solid black;
+    box-shadow: -100px -100px -100px #baba;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    margin-top: 100px;
+    padding: 10px 15px;
+    gap: 20px;
+}
+
+footer .info-desa {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    text-align: center;
+}
+
+footer .info-desa h3 {
+    font-size: 1em;
+    font-style: italic;
+    color: white;
+    margin-left: 80px;
+    /* box-shadow: 2px 2px 2px gray; */
+}
+
+footer .info-desa h3 img {
+    width: 40px;
+}
+
+footer .social-desa {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+footer .social-desa h2 {
+    color: #f3ff3b;
+    font-size: 1.3em;
+    font-style: italic;
+    letter-spacing: 5px;
+    font-weight: bolder;
+}
+
+footer .social-desa a img {
+    width: 50px;
+    margin: 0 20px;
+}
+
+footer .social-desa h3 {
+    font-size: 1em;
+    font-style: italic;
+    color: white;
+}
+
+footer .social-desa h3 img {
+    width: 30px;
+    padding-right: 10px;
+}
+
+
+/* 
+@media screen and (max-width: 425px) {
+    .contenedor-header .header1 a {
+        font-size: 3em;
+    }
+    .contenido .presentacion {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .contenido .presentacion .descripcion {
+        text-align: center;
+        justify-content: center;
+    }
+    .contenido .tiempo .tiempo-dividido .actividades {
+        width: 10px;
+        margin: 0;
+    }
+    .contenido .tiempo .tiempo-titulo {
+        justify-self: center;
+    }
+    .contenido .tiempo .tiempo-titulo h2::before {
+        width: 60px;
+    }
+} */
+
+
+/* 
+@media screen and (max-width: 768px) {
+    .contenedor-header {
+        height: 100px;
+    }
+    .contenido .presentacion {
+        grid-template-rows: 100px 90px;
+    }
+    .contenido .descripcion {}
+    .contenido .presentacion .descripcion p {
+        line-height: 50px;
+    }
+} */
+
+
+/* @media screen and (max-width: 1024px) {
+    .contenedor-header {
+        height: 90px;
+    }
+    .contenedor-header .header1 {
+        font-size: 1.6em;
+    }
+    .contenido .presentacion .img .img-photo {
+        height: 450px;
+    }
+    .contenido .presentacion .descripcion p {
+        line-height: 50px;
+    }
+    .contenido .presentacion .descripcion p {
+        font-size: 1.8em;
+        line-height: 30px;
+
+
+}
+.contenido .presentacion .descripcion h2 {
+    font-size: 2.9em;
+}
+.contenido .tiempo .tiempo-titulo h2 {
+    font-size: 2em;
+}
+.contenido .tiempo .tiempo-dividido {
+    width: 100%;
+}
+.contenido .tiempo .tiempo-dividido .actividades {
+    width: 430px;
+    height: 290px;
+    grid-template-rows: 40px 1fr;
+}
+.contenido .tiempo .tiempo-dividido .actividades h4 {
+    font-size: 1.6em;
+    grid-row: 1;
+}
+.contenido .tiempo .tiempo-dividido .actividades p {
+    font-size: 1.6em;
+    line-height: 40px;
+    grid-row: 2;
+    align-items: center;
+    align-items: center;
+    align-content: center;
+}
+footer .info-desa h3 {
+    font-size: 1.9em;
+}
+footer .social-desa h2 {
+    font-size: 2.8rem;
+}
+footer .social-desa h3 {
+    font-size: 1.9em;
+}
+footer .social-desa a img {
+    width: 60px;
+}
+*/

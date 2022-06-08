@@ -1,0 +1,14 @@
+@import './variables';
+.botton {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background-color: $color-botones;
+    color: $color-claro;
+    font-size: 1.25rem;
+    border: none;
+}

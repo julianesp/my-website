@@ -1,0 +1,11 @@
+// @import './div.scss';
+@import '../lib/div';
+.presentacion {
+    @extend .marco;
+    & .slides-control {
+        width: inherit;
+        & .slide {
+            width: inherit;
+        }
+    }
+}

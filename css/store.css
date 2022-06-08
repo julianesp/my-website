@@ -1,0 +1,828 @@
+/* tipo de letra */
+
+
+/* icono de menu  */
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?3ot2jt');
+    src: url('../fonts/icomoon.eot?3ot2jt#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?3ot2jt') format('truetype'), url('../fonts/icomoon.woff?3ot2jt') format('woff'), url('../fonts/icomoon.svg?3ot2jt#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+    content: "\e9bd";
+}
+
+body {
+    margin: 0;
+    background-size: cover;
+    /* background: 300deg, #baba 20%, #ffbaba 80%; */
+    background-color: #e0e6e6;
+    font-family: 'Oswald', sans-serif;
+}
+
+.burger-button {
+    display: none;
+    /* position: fixed; */
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(253, 171, 1, .7);
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    right: 0;
+    z-index: 1;
+}
+
+h2 {
+    font-size: 1.1rem;
+    font-weight: bolder;
+    color: #419CCA;
+    border: 1px solid #419CCA;
+    width: 250px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+h2:hover {
+    background-color: #419CCA;
+    color: #fff;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    /* background-color: #419CCA; */
+    background: linear-gradient(-90deg, #6FC0F9 10%, #0A96F7 80%);
+    /*background: linear-gradient(), rgba(red, green, blue, .3); */
+    margin: 0;
+    padding: 0;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+}
+
+.header #menu-h .desplegar {
+    color: #fff;
+    background-color: #419CCA;
+    border-radius: 5px;
+    box-shadow: 2px 2px white;
+    border: 1px solid white;
+    font-size: 1em;
+    padding: 5px;
+    margin: 0;
+}
+
+.header #menu-h .desplegar:hover {
+    color: white;
+    background-color: #088DD1;
+    cursor: pointer;
+}
+
+.header #menu-h .sub-menu {
+    display: none;
+    position: relative;
+    padding-bottom: 500px;
+}
+
+.header #menu-h .sub-menu a {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    color: #fff;
+    background-color: #088DD1;
+    text-decoration: none;
+    /**/
+}
+
+.header #menu-h:hover .sub-menu {
+    float: none;
+    padding: 0 0;
+    text-decoration: none;
+    text-align: left;
+    display: block;
+    z-index: 3;
+}
+
+.header #menu-h {
+    text-align: center;
+}
+
+.header #menu-h img {
+    align-items: center;
+    width: 35px;
+}
+
+.header #menu-h a {
+    display: block;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 2px 2px white;
+    margin-top: 3%;
+    padding: 5px;
+    font-size: 1em;
+}
+
+.header #menu-h a:hover {
+    color: white;
+    background-color: #088DD1;
+    margin-left: 0;
+}
+
+.header #menu-h ul {
+    list-style-type: none;
+}
+
+.header #menu-h ul ul {
+    display: none;
+    position: absolute;
+    transition: 1s;
+}
+
+.header #menu-h ul li a {
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header #menu-h ul li a:hover {
+    background-color: #088DD1;
+}
+
+.header #menu-h ul li ul {
+    margin: 0 0;
+}
+
+.header #menu-h ul li ul li:hover {
+    display: block;
+    position: absolute;
+}
+
+.header #menu-h ul ul li a {
+    /* margin: 15px 0; */
+    left: 0;
+    color: #1573a1;
+    background-color: rgba(235, 240, 217, 0.5);
+    margin: 15px 0;
+    /* padding-left: 0; */
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: 2px solid black;
+    justify-items: center;
+    margin: 10px 0;
+}
+
+.header a {
+    border: 1px solid brown;
+    padding: 5px 0;
+    margin: 10px 0;
+}
+
+.contenido {
+    height: 100%;
+    /* margin: 20px 80px; */
+}
+
+.contenido .container {
+    margin: 0;
+    padding: 30px;
+    background-color: aqua;
+    width: 100%;
+}
+
+.contenido .container ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contenido .container ul.slider {
+    position: relative;
+    width: 800px;
+    height: 300px;
+}
+
+.contenido .container ul.slider li {
+    position: absolute;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    background-color: white;
+    transition: opacity 1s;
+}
+
+.contenido .container ul.slider li img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.contenido .container ul.slider li:first-child {
+    opacity: 1;
+}
+
+
+/* se va a poner la propiedad target para que cuando se opriman los números, se muestre la imagen correspondiente */
+
+.contenido .container ul.slider li:target {
+    opacity: 1;
+}
+
+.contenido .container .menu {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.contenido .container .menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+.contenido .container .menu li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+
+.contenido .presentacion {
+    justify-content: center;
+    position: relative;
+    /* width: 100%; */
+    height: 340px;
+    margin: 0 auto;
+    border: 2px solid #419CCA;
+    object-fit: cover;
+}
+
+.contenido .presentacion .preacce {
+    text-align: center;
+}
+
+.contenido .presentacion .p1 {
+    width: 100%;
+    height: inherit;
+    background-image: url('../assets/img/presentacion/p1.gif');
+    background-size: 100% 100%;
+    /* background-repeat: no-repeat; */
+}
+
+.contenido .presentacion .p2 {
+    width: 100%;
+    height: inherit;
+    display: none;
+    background-image: url('../assets/img/presentacion/p1.gif');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.contenido .presentacion .p3 {
+    width: 100%;
+    height: inherit;
+    display: none;
+    background-image: url('../assets/img/presentacion/p1.gif');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.contenido .presentacion .iz {
+    left: 10px;
+    border-radius: 50%;
+}
+
+.contenido .presentacion .dere {
+    right: 10px;
+    border-radius: 50%;
+}
+
+.contenido .presentacion .page {
+    /* position: absolute; */
+    text-align: center;
+    left: 0px;
+    right: 0px;
+    bottom: 10px;
+    padding-right: 10px;
+}
+
+.contenido .presentacion .page li {
+    display: inline-block;
+    list-style: none;
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+/* estilos trabajo */
+
+.contenido .mi_trabajo {
+    margin-top: 100px;
+}
+
+.contenido .mi_trabajo .formateo {
+    position: relative;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.contenido .mi_trabajo .formateo .title {
+    font-size: 1em;
+    color: #c28604;
+    margin-top: 60px;
+}
+
+.contenido .mi_trabajo .formateo .sistemas_operativos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .2fr 1fr .2fr;
+    border: 1px solid black;
+}
+
+.contenido .mi_trabajo .formateo .sistemas_operativos .titulo {
+    margin-top: 20px;
+    align-self: center;
+    justify-self: center;
+}
+
+.contenido .mi_trabajo .formateo .sistemas_operativos .linux {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    height: 220px;
+    padding-bottom: 20px;
+    justify-items: center;
+    overflow-x: auto;
+}
+
+.contenido .mi_trabajo .formateo .sistemas_operativos .linux .titulo {
+    justify-items: center;
+    align-self: center;
+}
+
+.contenido .mi_trabajo .formateo .sistemas_operativos .linux .linux-distribuciones {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr;
+    padding: 0 20px;
+    align-self: center;
+}
+
+.contenido .mi_trabajo .formateo .sistemas_operativos .linux .linux-distribuciones .sistemas {
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    width: 200px;
+    height: 180px;
+    margin: 0 20px;
+    border: 1px solid gray;
+    box-shadow: -8px 10px 10px #AEB2B2;
+    border-radius: 20px;
+}
+
+.contenido .mi_trabajo .formateo .sistemas_operativos .linux .linux-distribuciones .sistemas h4 {
+    color: #000;
+    font-size: 1.2rem;
+}
+
+.contenido .mi_trabajo .formateo .sistemas_operativos .linux .linux-distribuciones .sistemas img {
+    width: 50%;
+    text-align: center;
+}
+
+.contenido .mi_trabajo .formateo .sistemas_operativos .windows {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    height: 220px;
+    justify-items: center;
+    overflow-x: auto;
+}
+
+.contenido .mi_trabajo .formateo .sistemas_operativos .windows .titulo {
+    justify-items: center;
+    align-self: center;
+}
+
+.contenido .mi_trabajo .formateo .sistemas_operativos .windows .windows-distribuciones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    padding: 0 20px;
+    align-self: center;
+}
+
+.contenido .mi_trabajo .formateo .sistemas_operativos .windows .windows-distribuciones .sistemas {
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    width: 200px;
+    height: 180px;
+    margin: 0 20px;
+    border: 1px solid gray;
+    box-shadow: -10px 5px 15px 0px #AEB2B2;
+    border-radius: 20px;
+}
+
+.contenido .mi_trabajo .formateo .sistemas_operativos .windows .windows-distribuciones .sistemas h4 {
+    color: #000;
+    font-size: 1.2rem;
+}
+
+.contenido .mi_trabajo .formateo .sistemas_operativos .windows .windows-distribuciones .sistemas img {
+    width: 50%;
+    text-align: center;
+}
+
+
+/* estilos para presentacion de programas */
+
+.contenido .mi_trabajo .formateo .programas {
+    position: relative;
+    height: 330px;
+    margin: 50px 0;
+}
+
+.contenido .mi_trabajo .formateo .programas .titulo h3 {
+    padding: 5px 0;
+}
+
+.contenido .mi_trabajo .formateo .programas .programas-contenedor {
+    width: 60%;
+    height: 330px;
+    margin: 0 auto;
+    border: 2px solid #419CCA;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px #bababa;
+    border-radius: 50px;
+    display: grid;
+    justify-content: center;
+    /*para dejar flechas dentro del contenedor*/
+    position: relative;
+}
+
+.contenido .mi_trabajo .formateo .programas .programas-varios {
+    text-align: center;
+    padding: 100px 180px;
+    margin: 0 auto;
+    background-size: cover;
+}
+
+.contenido .mi_trabajo .formateo .programas .programas-contenedor .c1 {
+    height: 10px;
+    background-image: url('../assets/img/programs/chrome.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    align-self: center;
+}
+
+.contenido .mi_trabajo .formateo .programas .programas-contenedor .c2 {
+    height: 10px;
+    background-image: url('../assets/img/programs/ofis.png');
+    display: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    align-self: center;
+}
+
+.contenido .mi_trabajo .formateo .programas .programas-contenedor .c3 {
+    height: 10px;
+    background-image: url('../assets/img/programs/adobe.png');
+    display: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    align-self: center;
+}
+
+.contenido .mi_trabajo .formateo .programas .programas-contenedor .boton {
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.contenido .mi_trabajo .formateo .programas .programas-contenedor .boton:hover {
+    color: yellowgreen;
+    background-color: rgba(0, 0, 0, .9);
+    transition: .7s;
+}
+
+.contenido .mi_trabajo .formateo .programas .programas-contenedor .izquierda {
+    border-radius: 50%;
+    left: 10px;
+}
+
+.contenido .mi_trabajo .formateo .programas .programas-contenedor .derecha {
+    border-radius: 50%;
+    right: 10px;
+}
+
+.contenido .mi_trabajo .formateo .programas .programas-contenedor .paginacion {
+    position: absolute;
+    text-align: center;
+    left: 0px;
+    right: 0px;
+    bottom: 10px;
+}
+
+.contenido .mi_trabajo .formateo .programas .programas-contenedor .paginacion li {
+    display: inline-block;
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    background-color: greenyellow;
+}
+
+
+/*estilos para accesorios celulares*/
+
+.contenido .accesorios {
+    position: relative;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.contenido .accesorios .celulares {
+    height: 365px;
+    padding: 10px;
+    margin: 0 50px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0 10px;
+    overflow-x: scroll;
+}
+
+.contenido .accesorios .celulares::-webkit-scrollbar {
+    height: 10px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+
+/* con thumb se accede a la barra */
+
+.contenido .accesorios .celulares::-webkit-scrollbar-thumb {
+    background: #419CCA;
+    border-radius: 5px;
+}
+
+.contenido .accesorios .celulares .accesorio-celular {
+    display: grid;
+    grid-template-rows: 40px 200px 60px;
+    align-items: center;
+    width: 225px;
+    margin: auto 5px;
+    border: 1px solid #bababa;
+    font-weight: bold;
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px #baba;
+}
+
+.contenido .accesorios .celulares .accesorio-celular h3 {
+    /* color: #419CCA; */
+    line-height: 40px;
+    height: 40px;
+    font-size: .9em;
+    margin: 0;
+}
+
+.contenido .accesorios .celulares .accesorio-celular img {
+    width: 70%;
+    height: 70%;
+    justify-self: center;
+}
+
+.contenido .accesorios .celulares .accesorio-celular a {
+    line-height: 40px;
+    font-size: 1em;
+    text-align: center;
+    background: linear-gradient(-180deg, #6FC0F9 10%, #0A96F7 100%);
+    padding: .5em .5em;
+    margin: 5px;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    /* box-shadow: inset x y; */
+    box-shadow: inset 0 -.2em rgba(0, 0, 0, .2);
+    color: #fff;
+    cursor: pointer;
+    /* para quitar el color del borde cuando se da click */
+    outline: none;
+    transition: .2s;
+    will-change: transform;
+}
+
+.contenido .accesorios .celulares .accesorio-celular a:hover {
+    color: #f3ff3b;
+    font-weight: bolder;
+}
+
+.contenido .accesorios .celulares .accesorio-celular a:active {
+    transform: scale(.9);
+}
+
+
+/*estilos para accesorios computadores*/
+
+.contenido .accesorios .pc {
+    height: 365px;
+    padding: 10px;
+    margin: 0 50px;
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: 1fr;
+    overflow: scroll;
+    overflow-y: unset;
+    align-items: center;
+}
+
+.contenido .accesorios .pc::-webkit-scrollbar {
+    height: 10px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+
+/* con thumb se accede a la barra */
+
+.contenido .accesorios .pc::-webkit-scrollbar-thumb {
+    background: #419CCA;
+    border-radius: 5px;
+}
+
+.contenido .accesorios .pc .accesorio-pc {
+    display: grid;
+    grid-template-rows: 40px 200px 60px;
+    align-items: center;
+    width: 225px;
+    margin: auto 10px;
+    border: 1px solid #bababa;
+    font-weight: bold;
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px #baba;
+}
+
+.contenido .accesorios .pc .accesorio-pc h3 {
+    line-height: 40px;
+    height: 40px;
+    font-size: .9em;
+    margin: 0;
+}
+
+.contenido .accesorios .pc .accesorio-pc img {
+    width: 80%;
+    height: 90%;
+    justify-self: center;
+}
+
+.contenido .accesorios .pc .accesorio-pc a {
+    text-decoration: none;
+    line-height: 40px;
+    font-size: 1em;
+    text-align: center;
+    background: linear-gradient(-180deg, #6FC0F9 10%, #0A96F7 100%);
+    padding: .5em .5em;
+    margin: 5px;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    /* box-shadow: inset x y; */
+    box-shadow: inset 0 -.2em rgba(0, 0, 0, .2);
+    color: #fff;
+    cursor: pointer;
+    /* para quitar el color del borde cuando se da click */
+    outline: none;
+    transition: .2s;
+    will-change: transform;
+}
+
+.contenido .accesorios .pc .accesorio-pc a:hover {
+    color: #f3ff3b;
+    font-weight: bolder;
+}
+
+.contenido .accesorios .pc .accesorio-pc a:active {
+    transform: scale(.9);
+}
+
+
+/* footer */
+
+footer {
+    background: linear-gradient(70deg, #6FC0F9 7%, #0A96F7 20%);
+    text-align: center;
+    margin-top: 100px;
+    gap: 20px;
+}
+
+footer .info-desa {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    text-align: center;
+}
+
+footer .info-desa h3 {
+    font-size: 1em;
+    font-style: italic;
+    color: white;
+    margin-left: 80px;
+    /* box-shadow: 2px 2px 2px gray; */
+}
+
+footer .info-desa h3 img {
+    width: 40px;
+}
+
+footer .social-desa {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+footer .social-desa h1 {
+    color: #f3ff3b;
+    font-size: 1.5em;
+    font-style: italic;
+    letter-spacing: 5px;
+    font-weight: bolder;
+}
+
+footer .social-desa a img {
+    width: 50px;
+    margin: 0 20px;
+    transform: scale();
+}
+
+footer .social-desa a img:hover {
+    animation-name: aumentar;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aumentar {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+footer .social-desa h3 {
+    font-size: 1em;
+    font-style: italic;
+    color: white;
+    margin-bottom: 30px;
+}
+
+footer .social-desa h3 img {
+    width: 30px;
+    padding-right: 10px;
+}

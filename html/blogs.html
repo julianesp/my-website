@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <!-- estilos  -->
+    <link rel="stylesheet" href="../css/blogs.css">
+
+    <!-- imagen de pestaña  -->
+    <link rel="icon" href="../assets/img/logo-pestaña.ico">
+
+    <link rel="stylesheet" href="../css/font/flaticon.css">
+
+    <!-- fuente  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
+
+    <header class="header">
+
+        <div id="menu-h">
+            <ul>
+                <li>
+                    <a href="../index.html" class="inicio">Inicio</a>
+                </li>
+            </ul>
+        </div>
+        <div id="menu-h">
+            <ul>
+                <li>
+                    <a href="profile.html" class="inicio">Mi perfil</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="contenido">
+        <section class="logo">
+            <img src="../assets/img/Logo.png" alt="Logo de la tienda">
+        </section>
+
+        <section class="noticias">
+            <h3>noticias del valle</h3>
+            <h3>noticias de</h3>
+            <h3>noticias del valle</h3>
+            <h3>noticias del valle</h3>
+        </section>
+    </main>
+
+    <footer>
+
+        <div class="info-desa">
+            <h3>Desarrollado por Juli&aacute;n España</h3>
+            <h3>T&eacute;cnico en sistemas - SENA</h3>
+            <h3>Colón, Putumayo</h3>
+            <!-- <h3><img src="../assets/img/sena.png" alt=""></h3> -->
+        </div>
+
+        <div class="social-desa">
+            <h1>Cont&aacute;ctame:</h1>
+            <h3>julii1295@gmail.com</h3>
+            <a href="https://www.facebook.com/alex.rio20/" target="_blank"><img src="../assets/img/facebook.png" alt="Imagen de red social Facebook" title="Mi perfil en Facebook"></a>
+            <!-- <a href="https://twitter.com/julialexes" target="_blank"><img src="assets/img/network/twitter.svg" alt="Imagen de red social Twitter" title="Mi perfil en Twitter"></a> -->
+            <a href="https://wa.me/c/573174503604" target="_blank">
+                <img src="../assets/img/whatsapp.png" alt="Imagen de red social de whatsapp" title="Mi cuenta de whatsapp">
+            </a>
+        </div>
+
+        <div class="fuentes">
+            <h3>Fuentes:</h3>
+            <p>
+                Icons made by
+                <a href="https://www.freepik.com" target="_blank" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" target="_blank" title="Flaticon">www.flaticon.com
+                </a>
+            </p>
+        </div>
+
+    </footer>
+
+    <script>
+        var counter = 1;
+
+        setInterval(function() {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 4) {
+                counter = 1;
+            }
+        }, 3000)
+
+        // --------------------------------------------------
+
+
+        //menu lateral en 768px
+        const header = document.querySelector('.header');
+        const burgerMenu = document.querySelector('#burger-menu');
+
+        burgerMenu.addEventListener('click', hideShow);
+
+        function hideShow() {
+            if (header.classList.contains('is-active')) {
+                header.classList.remove('is-active');
+
+            } else {
+                header.classList.add('is-active');
+            }
+        }
+
+        //slide de presentación de anuncios
+        var indi = 0;
+
+        $(".page li").eq(indi).css("background-color", "#419CCA");
+
+        $(".page li").click(function() {
+            indi = $(this).index();
+            $(".page li").css("background-color", "#bababa");
+            $(this).css("background-color", "#419CCA");
+            $(".preacce").hide();
+            $(".preacce").eq(indi).fadeIn();
+        });
+
+        $(".dere").click(function() {
+            indi++;
+            if (indi > 2) {
+                indi = 0;
+            }
+            $(".preacce").hide();
+            $(".preacce").eq(indi).fadeIn();
+            $(".page li").css("background-color", "#bababa");
+            $(".page li").eq(indi).css("background-color", "#419CCA");
+        });
+        $(".iz").click(function() {
+            indi--;
+            if (indi < 0) {
+                indi = 1;
+            }
+            $(".preacce").hide();
+            $(".preacce").eq(indi).fadeIn();
+            $(".page li").css("background-color", "#bababa");
+            $(".page li").eq(indi).css("background-color", "#419CCA");
+        });
+
+        setInterval(() => {
+            indi++;
+            // condicional para volver a la imagen 0
+            if (indi > 2) {
+                indi = 0;
+            }
+            $(".preacce").hide();
+            $(".preacce").eq(indi).fadeIn();
+            $(".page li").css("background-color", "#bababa");
+            $(".page li").eq(indi).css("background-color", "#419CCA");
+        }, 1000);
+
+        $(".dere").click(function() {
+            indi++;
+            if (indi > 2) {
+                indi = 0;
+            }
+            $(".preacce").hide();
+            $(".preacce").eq(indi).fadeIn();
+            $(".page li").css("background-color", "#bababa");
+            $(".page li").eq(indi).css("background-color", "#419CCA");
+        });
+
+        $(".iz").click(function() {
+            indi--;
+
+            if (indi < 0) {
+                indi = 2;
+            }
+            $(".preacce").hide();
+            $(".preacce").eq(indi).fadeIn();
+            $(".page li").css("background-color", "yellow");
+            $(".page li").eq(indi).css("background-color", "orange");
+        });
+
+
+        // slide automatico para programas
+        var indice = 0;
+
+        $(".paginacion li").eq(indice).css("background-color", "orange");
+
+        $(".paginacion li").click(function() {
+            indice = $(this).index();
+            $(".paginacion li").css("background-color", "yellow");
+            $(this).css("background-color", "orange");
+            $(".programas-varios").hide();
+            $(".programas-varios").eq(indice).fadeIn();
+        });
+
+        // para que las imagenes se pasen automaticamente
+        setInterval(() => {
+            indice++;
+            // condicional para volver a la imagen 0
+            if (indice > 2) {
+                indice = 0;
+            }
+            $(".programas-varios").hide();
+            $(".programas-varios").eq(indice).fadeIn();
+            $(".paginacion li").css("background-color", "yellow");
+            $(".paginacion li").eq(indice).css("background-color", "orange");
+        }, 4000);
+
+        $(".derecha").click(function() {
+            indice++;
+            // condicional para volver a la imagen 0
+            if (indice > 2) {
+                indice = 0;
+            }
+            $(".programas-varios").hide();
+            $(".programas-varios").eq(indice).fadeIn();
+            $(".paginacion li").css("background-color", "yellow");
+            $(".paginacion li").eq(indice).css("background-color", "orange");
+        });
+        $(".izquierda").click(function() {
+            indice--;
+            // condicional para volver a la imagen 0
+            if (indice < 0) {
+                indice = 2;
+            }
+            $(".programas-varios").hide();
+            $(".programas-varios").eq(indice).fadeIn();
+            $(".paginacion li").css("background-color", "yellow");
+            $(".paginacion li").eq(indice).css("background-color", "orange");
+        });
+    </script>
+</body>
+
+</html>
