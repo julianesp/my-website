@@ -1,4 +1,5 @@
 extends template/template.pug
-
+block append estilos 
+    link(rel="stylesheet", href="./sass/index.css")
 block append contenido
     include ./pug/accesorios.pug
