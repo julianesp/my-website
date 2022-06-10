@@ -10,3 +10,4 @@ Les comparto este sitio para mostrar mi tienda y para recibir su feedback, que v
 - Css
 - Sass
 - JavaScritp
+- Pug
