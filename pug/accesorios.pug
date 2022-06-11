@@ -1,4 +1,35 @@
-include configuraciones.pug
+mixin boxCel(titulo, imagen)
+    li.caja
+        h3=titulo                                
+        img(src="../assets/img/accesorios/celulares/"+imagen)
+        button(onclick="iphone()") Ver
+
+mixin boxLap(titulo, imagen)
+    li.caja
+        h3=titulo                                
+        img(src="../assets/img/accesorios/laptops/"+imagen)
+        button(onclick="iphone()") Ver
+
+mixin boxHealth(titulo, imagen)
+    li.caja
+        h3=titulo                                
+        img(src="../assets/img/accesorios/salud/"+imagen)
+        button(onclick="iphone()") Ver
+
+mixin boxBooks(titulo, imagen)
+    li.caja
+        h3=titulo                                
+        img(src="../assets/img/accesorios/books/"+imagen)
+        button(onclick="iphone()") Ver
+
+-var titleCel = ["Usb iPhone","Memoria SanDisk","Usb carga rápida","Soporte estático para celulares","Soporte móvil para celulares","Correa reloj inteligente","Vidrio Redmi Note 9","Micrófono","Adaptador Usb - Tipo C"]
+
+-var titleLap = ["Micrófono","Cargador Lenovo","Usb 3.0","Ram 2gb","Router 450","Mouse","Carcasa"]
+
+-var titleHealth = ["Temperatura","Pulso"]
+
+-var titleBooks = ["Electrónica","Elon Musk", "Física-Serway","Circuitos","Java"]
+
 section.presentation             
     ul.tipos 
         li#slide1
