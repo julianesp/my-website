@@ -221,11 +221,7 @@ body {
   list-style: none;
   margin: 0;
 }
-.container .presentation .tipos li button {
-  height: inherit;
-  border: none;
-}
-.container .presentation .tipos li button img {
+.container .presentation .tipos li img {
   height: 100%;
 }
 .container .presentation .selector {
