@@ -1,17 +1,3 @@
-//movimiento imagenes presentation
-// var counter = 1;
-
-// setInterval(function() {
-//     document.getElementById("radio" + counter).checked = true;
-
-//     counter++;
-//     if (counter > 4) {
-//         counter = 1;
-//     }
-// }, 5000);
-
-
-
 //menu lateral en 768px
 const header = document.querySelector(".header");
 const burgerMenu = document.querySelector("#burger-menu");
@@ -91,9 +77,4 @@ function abrir() {
     setTimeout(() => {
         cerrar()
     }, 6000);
-}
-
-
-window.onload = function() {
-    // abrir()
 }
