@@ -1,26 +1,4 @@
-mixin boxCel(titulo, imagen)
-    li.caja
-        h3=titulo                                
-        img(src="../assets/img/accesorios/celulares/"+imagen)
-        button(onclick="iphone()") Ver
-
-mixin boxLap(titulo, imagen)
-    li.caja
-        h3=titulo                                
-        img(src="../assets/img/accesorios/laptops/"+imagen)
-        button(onclick="iphone()") Ver
-
-mixin boxHealth(titulo, imagen)
-    li.caja
-        h3=titulo                                
-        img(src="../assets/img/accesorios/salud/"+imagen)
-        button(onclick="iphone()") Ver
-
-mixin boxBooks(titulo, imagen)
-    li.caja
-        h3=titulo                                
-        img(src="../assets/img/accesorios/books/"+imagen)
-        button(onclick="iphone()") Ver
+include ./configuraciones.pug
 
 -var titleCel = ["Usb iPhone","Memoria SanDisk","Usb carga rápida","Soporte estático para celulares","Soporte móvil para celulares","Correa reloj inteligente","Vidrio Redmi Note 9","Micrófono","Adaptador Usb - Tipo C"]
 
