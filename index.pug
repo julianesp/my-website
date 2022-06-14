@@ -1,7 +1,8 @@
 extends ./template/template.pug
 block append estilos
-    link(rel="stylesheet", href="./sass/index.css")
+    link(rel="stylesheet" href="./sass/index.css")
 block append contenido
     include ./pug/accesorios.pug
-    //- script(src="./js/animations.js")
-     
+block append js
+    script(src="./js/animations.js") 
+    script(src="./js/pages.js")
