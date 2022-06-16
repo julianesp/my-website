@@ -62,7 +62,8 @@ body {
     line-height: 40px;
     text-align: center;
     right: 0;
-    z-index: 20;
+    z-index: 100;
+    top: 5px;
 }
 
 .header {
@@ -151,6 +152,10 @@ body {
         height: 70px;
         width: 100%;
         box-shadow: 0 0 15px $color-sombra-blue;
+        position: fixed;
+        top: 0;
+        background-color: #fff;
+        z-index: 50;
         & img {
             width: 50px;
             height: calc(100% - 20px);
@@ -165,7 +170,7 @@ body {
     }
     & .presentation {
         height: 300px;
-        margin-top: 15px;
+        margin-top: 90px;
         & .tipos {
             display: flex;
             overflow: hidden;

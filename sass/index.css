@@ -92,7 +92,8 @@ body {
   line-height: 40px;
   text-align: center;
   right: 0;
-  z-index: 20;
+  z-index: 100;
+  top: 5px;
 }
 
 .header {
@@ -193,6 +194,10 @@ body {
   height: 70px;
   width: 100%;
   box-shadow: 0 0 15px #0ABEE2;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  z-index: 50;
 }
 .container .logo img {
   width: 50px;
@@ -207,7 +212,7 @@ body {
 }
 .container .presentation {
   height: 300px;
-  margin-top: 15px;
+  margin-top: 90px;
 }
 .container .presentation .tipos {
   display: flex;
