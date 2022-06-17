@@ -492,6 +492,7 @@ body {
   flex-direction: column;
   background-color: #0ABEE2;
   width: 100%;
+  padding: 20px 0;
 }
 .footer .info-dev {
   letter-spacing: 2px;
