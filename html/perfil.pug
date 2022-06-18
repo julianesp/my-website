@@ -1,6 +1,6 @@
 extends ../template/template.pug
-block append perfil 
-    link(rel="stylesheet", href="..sass/profile.css")
+block append estilos
+    link(rel="stylesheet", href="../sass/profile.css")
 block append contenido 
     section.dev
         section.img 
@@ -16,4 +16,6 @@ block append contenido
                 img(src="", alt="Logo Awaspa")
                 button(onclick="awaspa()") Visitar
 
-        
+block append js
+    script(src="./js/animations.js") 
+    script(src="./js/pages.js")

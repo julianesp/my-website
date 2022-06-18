@@ -1,5 +1,5 @@
 function profile(params) {
-    location.href = '../html/perfil.html'
+    location.href = 'html/perfil.html'
 }
 
 function register(params) {
@@ -16,9 +16,9 @@ function valley(params) {
 }
 
 function store(params) {
-    location.href = '../index.html'
+    location.href = 'index.html'
 }
 
 function registro(params) {
-    location.href = '../pug/register.html'
+    location.href = 'pug/register.html'
 }
