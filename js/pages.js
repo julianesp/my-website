@@ -22,3 +22,7 @@ function store(params) {
 function registro(params) {
     location.href = 'pug/register.html'
 }
+
+function tiendas(params) {
+    location.href = '../html/tiendas.html'
+}
