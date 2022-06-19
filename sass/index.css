@@ -211,7 +211,7 @@ body {
 }
 .container .presentation {
   height: 300px;
-  margin-top: 90px;
+  margin-top: 20px;
 }
 .container .presentation .tipos {
   display: flex;
