@@ -1,5 +1,5 @@
 function profile(params) {
-    location.href = 'html/perfil.html'
+    location.href = './html/perfil.html'
 }
 
 function register(params) {
