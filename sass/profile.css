@@ -47,4 +47,13 @@
   100% {
     opacity: 1;
   }
+}
+.dev .portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.dev .portfolio .empresa img {
+  width: 50px;
 }/*# sourceMappingURL=profile.css.map */
