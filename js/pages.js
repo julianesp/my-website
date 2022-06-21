@@ -1,9 +1,5 @@
 function profile(params) {
-    location.href = './html/perfil.html'
-}
-
-function register(params) {
-    location.href = '../html/perfil.pug'
+    location.href = '../html/perfil.html'
 }
 
 function blog(params) {
@@ -16,11 +12,11 @@ function valley(params) {
 }
 
 function store(params) {
-    location.href = 'index.html'
+    location.href = '../index.html'
 }
 
 function registro(params) {
-    location.href = 'pug/register.html'
+    location.href = '../pug/register.html'
 }
 
 function tiendas(params) {
@@ -28,9 +24,9 @@ function tiendas(params) {
 }
 
 function cirp(params) {
-    location.href = 'https://julianesp.github.io/awaspa/'
+    location.href = 'https://julianesp.github.io/cirp/'
 }
 
 function awaspa(params) {
-    location.href = 'https://julianesp.github.io/cirp/'
+    location.href = 'https://julianesp.github.io/awaspa/'
 }
