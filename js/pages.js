@@ -6,16 +6,6 @@ function profile(params) {
     location.href = 'html/perfil.html'
 }
 
-function blog(params) {
-    location.href = 'html/perfil.pug'
-}
-
-function valley(params) {
-    location.href = 'html/perfil.pug'
-}
-
-
-
 function registro(params) {
     location.href = 'pug/register.html'
 }
@@ -23,6 +13,12 @@ function registro(params) {
 function tiendas(params) {
     location.href = 'html/tiendas.html'
 }
+
+function blog(params) {
+    location.href = 'html/perfil.pug'
+}
+
+
 
 function cirp(params) {
     location.href = 'https://julianesp.github.io/cirp/'
