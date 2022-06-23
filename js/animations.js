@@ -46,22 +46,17 @@ function without_register() {
     }
 }
 
-//change of image
-function changeImage() {
-
-}
-
 //saludo
-// window.onload = function show() {
-//     setTimeout(() => {
-//         swal('Gracias por visitar mi tienda')
+window.onload = function show() {
+    setTimeout(() => {
+        swal('Gracias por visitar mi tienda')
 
-//     }, 3000);
+    }, 3000);
 
-//     if (TimeRanges == 5000) {
-//         alert('ddddd')
-//     }
-// }
+    if (TimeRanges == 5000) {
+        alert('ddddd')
+    }
+}
 
 function cerrar() {
     setTimeout(() => {

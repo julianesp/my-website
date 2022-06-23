@@ -532,6 +532,7 @@ body {
   height: 50px;
   border-radius: 50%;
   background: none;
+  background-color: #fff;
   cursor: pointer;
 }
 .footer .social button img {
