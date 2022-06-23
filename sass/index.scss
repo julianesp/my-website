@@ -54,16 +54,16 @@ body {
 .burger-button {
     position: fixed;
     margin: 10px;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
     border-radius: 50%;
     background-color: $color-botones;
     color: #fff;
-    line-height: 40px;
     text-align: center;
     right: 0;
     z-index: 100;
-    top: 5px;
+    top: -2.5px;
 }
 
 .header {
@@ -147,17 +147,18 @@ body {
         height: auto;
     }
     & .logo {
+        position: fixed;
         display: flex;
         align-items: center;
-        height: 70px;
+        height: 45px;
         width: 100%;
         box-shadow: 0 0 15px $color-sombra-blue;
         top: 0;
         background-color: #fff;
         z-index: 50;
         & img {
-            width: 50px;
-            height: calc(100% - 20px);
+            width: 36px;
+            // height: calc(100% - 20px);
             margin: 0 10px;
         }
         & h4 {

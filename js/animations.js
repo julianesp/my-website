@@ -53,7 +53,7 @@ function without_register() {
 //éste code sirve
 window.onload = function show() {
     setTimeout(() => {
-        swal('Bienvenid@s a mi sitio web')
+        swal('Bienvenid@s a mi sitio web ')
     }, 1000);
 }
 
