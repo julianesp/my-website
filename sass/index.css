@@ -537,4 +537,9 @@ body {
 }
 .footer .social button img {
   width: 30px;
+}
+
+.swal-footer {
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=index.css.map */

@@ -1,3 +1,6 @@
+//incluyendo animación alert
+// import swal from 'sweetalert';
+
 //menu lateral en 768px
 const header = document.querySelector(".header");
 const burgerMenu = document.querySelector("#burger-menu");
@@ -47,15 +50,11 @@ function without_register() {
 }
 
 //saludo
+//éste code sirve
 window.onload = function show() {
     setTimeout(() => {
-        swal('Gracias por visitar mi tienda')
-
-    }, 3000);
-
-    if (TimeRanges == 5000) {
-        alert('ddddd')
-    }
+        swal('Bienvenid@s a mi sitio web')
+    }, 1000);
 }
 
 function cerrar() {
