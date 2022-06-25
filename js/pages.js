@@ -18,8 +18,6 @@ function blog(params) {
     location.href = 'html/perfil.pug'
 }
 
-
-
 function cirp(params) {
     location.href = 'https://julianesp.github.io/cirp/'
 }

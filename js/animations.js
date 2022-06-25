@@ -51,11 +51,11 @@ function without_register() {
 
 //saludo
 //éste code sirve
-window.onload = function show() {
-    setTimeout(() => {
-        swal('Bienvenid@s a mi sitio web ')
-    }, 1000);
-}
+// window.onload = function show() {
+//     setTimeout(() => {
+//         swal('Bienvenid@s a mi sitio web ')
+//     }, 1000);
+// }
 
 function cerrar() {
     setTimeout(() => {
@@ -81,16 +81,13 @@ function abrir() {
  * DEBO TENER LAS IMAGENES EN UN ARREGLO PARA
  * PODER ACCEDER A ELLAS 
  */
-function mostrarImagenes(params) {
-    for (let index = 0; index < array.length; index++) {
-        const element = array[index];
 
-    }
-}
+
 
 //ubicando el elemento a modificar
-var botonesPresen = document.getElementById('slide1')
 
-if (botonesPresen.onclick(mostrarImagenes())) {
-    alert('diste clic en boton de imagen')
+var botones = document.getElementById('slide1')
+
+function botonesPresen() {
+
 }
