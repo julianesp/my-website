@@ -63,7 +63,7 @@ body {
     text-align: center;
     right: 0;
     z-index: 100;
-    top: -2.5px;
+    top: 5px;
 }
 
 .header {
@@ -150,7 +150,7 @@ body {
         position: fixed;
         display: flex;
         align-items: center;
-        height: 45px;
+        height: 55px;
         width: 100%;
         box-shadow: 0 0 15px $color-sombra-blue;
         top: 0;
@@ -170,7 +170,8 @@ body {
     }
     & .presentation {
         height: 300px;
-        margin-top: 20px;
+        margin-top: 70px;
+        position: relative;
         & .tipos {
             display: flex;
             overflow: hidden;

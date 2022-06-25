@@ -72,3 +72,25 @@ function abrir() {
         cerrar()
     }, 6000);
 }
+
+/**
+ * Con esta funcion debo recorrer las imágenes
+ * para que cada vez que doy clic en el boton sea derecha
+ * o izquierda, se cambie de imagen
+ * 
+ * DEBO TENER LAS IMAGENES EN UN ARREGLO PARA
+ * PODER ACCEDER A ELLAS 
+ */
+function mostrarImagenes(params) {
+    for (let index = 0; index < array.length; index++) {
+        const element = array[index];
+
+    }
+}
+
+//ubicando el elemento a modificar
+var botonesPresen = document.getElementById('slide1')
+
+if (botonesPresen.onclick(mostrarImagenes())) {
+    alert('diste clic en boton de imagen')
+}
