@@ -1,0 +1,18 @@
+extends ./template/template.pug
+block append perfil
+    link(rel="stylesheet", href="../sass/profile.css")
+block append contenido
+    section.dev
+        section.img 
+            img(src="../assets/img/developer.jpg", alt="Desarrollador del sitio")
+        section.description 
+            <h2>Hola, soy Juli&aacute;n, desarrollador frontend</h2>
+            <p>Desde niño me ha gustado tocar guitarra, tambi&eacute;n me dedico a leer porque me gusta enterarme de los hechos que han marcado la actualidad. <br>Espero sea de su agrado mi sitio 😉</p>
+        section.portfolio 
+            h3 Mis proyectos
+            .empresa 
+                img(src="../assets/img/empresas/logo-ico.png", alt="Logo CIRP")
+                button(onclick="cirp()") Visitar Cirp
+            .empresa 
+                img(src="../assets/img/empresas/awaspa.png", alt="Logo Awaspa")
+                button(onclick="awaspa()") Visitar Awaspa
