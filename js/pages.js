@@ -3,11 +3,11 @@ function store(params) {
 }
 
 function profile(params) {
-    location.href = 'pug/perfil.html'
+    location.href = '../template/perfil.html'
 }
 
 function registro(params) {
-    location.href = 'pug/register.html'
+    location.href = 'template/register.html'
 }
 
 function tiendas(params) {
