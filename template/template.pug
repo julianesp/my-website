@@ -10,12 +10,57 @@ html(lang="en")
         block perfil
         title Neurai Dev
     body        
-        include ../components/header.pug
+        //- include ../components/header.pug
+        i.icon-menu.burger-button#burger-menu
+        header.header
+            nav.header__contenedor
+                #menu
+                    ul
+                        li
+                            button(onclick="store()") Tienda
+                #menu
+                    ul
+                        li
+                            button(onclick="profile()") Mi perfil
+                #menu
+                    ul
+                        li
+                            button(onclick="registro()") Registro
+                #menu
+                    ul
+                        li
+                            button(onclick="tiendas()") Tiendas
 
-        include ../components/main.pug
+        //- include ../components/main.pug
+        main.container 
+            section.logo
+                img(src="../assets/img/cerebro.svg" alt="Logo")
+                h4 Neurai Dev
+            block contenido
 
-        include ../components/footer.pug
-        block js
-            script(src="js/animations.js") 
-            script(src="js/pages.js")
-            script(src="https://unpkg.com/sweetalert/dist/sweetalert.min.js") 
+        footer.footer
+            section.info-dev 
+                h4.gradiente-text Desarrollado por:<br>Julián España
+                img(src="assets/img/developer_2.jpg", alt="Desarrollador")
+                .education
+                    h5 Técnico en sistemas                
+                    img(src="assets/img/logos/sena.png", alt="Logo SENA")
+                    h5 Tecnólogo en Análisis de sistemas
+                    img(src="assets/img/logos/sena.png", alt="Logo SENA")
+                    h5 Desarrollador Front-End
+                    img(src="assets/img/logos/platzi.jpg", alt="Logo Platzi")                      
+            section.social 
+                button(onclick="redes()")
+                    img(src="assets/img/icons/red.png", alt="")
+                      //- button(onclick="linkedin()" target="_blank") 
+                      //-     img(src="./assets/img/network/linkedin.png", alt="LinkedIn")
+                      //- button(onclick="twitter()")
+                      //-     img(src="./assets/img/network/twitter.svg", alt="Twitter")
+                      //- button(onclick="facebook()")
+                      //-     img(src="./assets/img/network/facebook.png", alt="Facebook")
+                      //- button(onclick="whatsapp()")
+                      //-     img(src="./assets/img/network/whatsapp.svg", alt="Whatsapp")
+
+        script(src="js/animations.js") 
+        script(src="js/pages.js")
+        script(src="https://unpkg.com/sweetalert/dist/sweetalert.min.js")

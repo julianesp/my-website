@@ -3,7 +3,7 @@ function store(params) {
 }
 
 function profile(params) {
-    location.href = '../perfil.html'
+    location.href = '../html/perfil.html'
 }
 
 function registro(params) {
